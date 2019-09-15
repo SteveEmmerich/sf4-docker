@@ -3,7 +3,7 @@ LABEL maintainer="sdemmer@widdletechinc.com"
 
 ENV DOWNLOAD_LINK=https://media.forgecdn.net/files/2725/984
 ENV VERSION=4.0.8
-ENV JVM_OPTS=-Xms2048m -Xmx2048m
+ENV JVM_OPTS="-Xms2048m -Xmx2048m"
 USER root
 WORKDIR /minecraft
 
