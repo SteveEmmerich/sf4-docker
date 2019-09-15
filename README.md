@@ -7,7 +7,7 @@ https://minecraft.curseforge.com/projects/skyfactory-4
 Run the docker image by executing this command:
 
 ```
-docker run -i -p 25565:25565 --name sf4 cochief/skyfactory4
+docker run -i -p 25565:25565 --name sf4 wti/skyfactory4
 ```
 
 I use a script like this:
@@ -17,7 +17,7 @@ I use a script like this:
 
 docker stop sf4
 docker rm sf4
-docker pull cochief/skyfactory4
+docker pull wti/skyfactory4
 
 docker run -d --name sf4 \
            -v /home/core/sf4/world:/minecraft/world \
@@ -26,5 +26,5 @@ docker run -d --name sf4 \
            -v /home/core/sf4/whitelist.json:/minecraft/whitelist.json \
            --restart always \
            -p 25565:25565 \
-           cochief/skyfactory4
+           wti/skyfactory4
 ```
